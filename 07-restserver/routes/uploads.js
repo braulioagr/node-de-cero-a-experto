@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { actualizarImagen, cargarArchivo, mostrarImagen } from '../controllers/uploads.js';
+import { actualizarImagenCloudinary, cargarArchivo, mostrarImagen } from '../controllers/uploads.js';
 import { check } from 'express-validator';
 import { validarCampos, validarArchivoSubir } from '../middlewares/index.js';
 import { coleccionesPermitidas } from '../helpers/index.js'
@@ -12,7 +12,7 @@ UploadsRouter.put('/:coleccion/:id', [
   check('id', 'El id debe ser un id de monogo').isMongoId(),
   check('coleccion').custom( c => coleccionesPermitidas( c, ['usuarios', 'productos'] )),
   validarCampos
-], actualizarImagen);
+], actualizarImagenCloudinary);
 
 UploadsRouter.get('/:coleccion/:id', [
   check('id', 'El id debe ser un id de monogo').isMongoId(),
