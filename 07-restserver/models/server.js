@@ -50,7 +50,8 @@ export default class Server {
         //Carga de archivos
         this.app.use(pkg({
             useTempFiles : true,
-            tempFileDir : '/tmp/'
+            tempFileDir : '/tmp/',
+            createParentPath: true
         }));
 
     }

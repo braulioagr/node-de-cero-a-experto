@@ -1,6 +1,0 @@
-PORT=8080
-MONGODB_CNN=mongodb+srv://user_node_cafe:ehGdQ5s5xz9AhNY9@miclusternode.ftzybk4.mongodb.net/cafeDB
-SECRETORPRIVATEKEY=mE92^&Vl$4RR
-
-GOOGLE_CLIENT_ID=907089344948-phqgfh4fc4bfko8d3j8nnp9o2aao95sb.apps.googleusercontent.com
-GOOGLE_SECRET_ID=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
